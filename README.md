@@ -42,7 +42,7 @@ You can host your Weather Forecast App using:
 Push your code to GitHub
 Go to Settings > Pages
 Select Branch: main and save
-Visit: https://your-username.github.io/weather-forecast/
+Visit: https://okeyifea.github.io/weather-forecast/
 2️⃣ Netlify / Vercel:
 Create an account on Netlify or Vercel
 Upload or link the repository for automatic deployment
