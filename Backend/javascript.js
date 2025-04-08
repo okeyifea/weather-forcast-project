@@ -28,12 +28,11 @@ function submitInput() {
     alert('Please enter a correct state');
     return false;
   } else {
+      //The code print out the weather result
     localStorage.setItem('input', input.value);
     window.location.href = '../Frontend/second.html';
   }
-  //The code print out the weather result
-  localStorage.setItem('input', input.value);
-  window.location.href = '../Frontend/second.html';
+
 }
   //Code to extract data from API
 const apikey = "8f12c103c592e4216ded1bcc4da97cb1"
