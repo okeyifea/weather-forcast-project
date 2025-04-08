@@ -36,7 +36,7 @@ function submitInput() {
   window.location.href = '../Frontend/second.html';
 }
   //Code to extract data from API
-const apikey = "8f12c103c592e4216ded1bcc4da97cb1"
+const apikey = "04d0459ac0bf5b5fda1f0086c9a12aa8"
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q="
 
   async function checkWeather(){
