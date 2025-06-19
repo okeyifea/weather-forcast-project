@@ -23,14 +23,14 @@
 const input = document.getElementById('input'); 
 
 function submitInput() {
-  // The code checks if the input is empty
+  // The code checks if the input is emptys
   if (input.value.trim() === '') {
     alert('Please enter a correct state');
     return false;
   } else {
     // The code stores the input and redirects to another page
     localStorage.setItem('input', input.value);
-    window.location.href = '../index2.html';
+    window.location.href = "index2.html";
   }
 }
 
@@ -57,13 +57,13 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + "KMPH";
 
-    const WeatherIcon = document.querySelector(".img_1")
+    const WeatherIcon = document.querySelector(".img1")
     if (data.weather[0].main == "Clouds") {
-      WeatherIcon.src = "../Backend/images/cloudy.png";
+      WeatherIcon.src = "./IMG/cloudy.png";
     } else if (data.weather[0].main == "Clear") {
-      WeatherIcon.src = "../Backend/images/sun.png";
+      WeatherIcon.src = "./IMG/sun.png";
     } else{
-      WeatherIcon.src = "../Backend/images/rain.png";
+      WeatherIcon.src = "./IMG/rain.png";
     }
   }catch (error) {
     console.error('Error fetching weather data:', error);

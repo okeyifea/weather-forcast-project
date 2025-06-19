@@ -1,0 +1,149 @@
+/*body{
+    background-color: black;
+}
+.container{
+    background-color: skyblue;
+  color: whitesmoke;
+  width: 90%;
+  max-width: 470px;
+  margin: 100px auto 0;
+  padding: 40px 35px;
+  border-radius: 20px 20px;
+  text-align: center;
+  display: grid;
+  justify-content: center; 
+  margin-top: 0px;
+}
+.img_1{
+    margin-top: -80px;
+    width: 300px;
+}
+.temp{
+    margin-top: -10px;
+    font-size: 60px;
+    font-weight: 500;
+}
+.state{
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.Forcast{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 80px;
+    margin-top: 20px;
+
+}
+.col{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: -30px;
+}
+.col img{
+    width: 150px;
+    margin-right: 10px;
+}
+.img_2, .img_3{
+    width: 100px;
+    height: 150px;
+}
+.img_2{
+    margin-left: -50px;
+}
+.humidity, .wind{
+    margin-top: 50px;
+    font-size: 20px;
+}*/
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #31255a 0%, #75b4e3 60%, #8fe0ff 100%)
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  height: 100vh;     
+  padding: 1rem;
+}
+
+/* Responsive container */
+.container {
+  background-color: skyblue;
+  color: whitesmoke;
+  max-width: 600px;
+  width: 70rem;
+  height: 70rem;
+  max-height: 90vh;
+  margin: 1rem auto;
+  text-align: center;
+  display: grid;
+  grid-gap: 1rem;
+  border-radius: 40px;
+}
+
+/* Hero image */
+.img1 {
+  width: 60rem;
+  max-width: 300px;
+  justify-self: center;
+}
+
+/* Fluid typography */
+.temp {
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 500;
+}
+
+.state {
+  font-size: clamp(1.5rem, 6vw, 3rem);
+  font-weight: 400;
+}
+
+/* Forecast layout adapts responsively */
+.Forcast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+/* Forecast items */
+.col {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.col img {
+  width: 10rem;
+  height: 10rem;
+  padding: 0.5rem;
+}
+
+/* Weather data text */
+.humidity, .wind {
+  margin: 0;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+/* Smaller screen tweaks */
+@media (max-width: 400px) {
+  .container {
+    padding: 20px;
+  }
+}
