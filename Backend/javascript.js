@@ -30,7 +30,7 @@ function submitInput() {
   } else {
       //The code print out the weather result
     localStorage.setItem('input', input.value);
-    window.location.href = '../Frontend/second.html';
+    window.location.href = '../index2.html';
   }
 
 }
