@@ -20,20 +20,20 @@
     
   setInterval (updateDateTime, 1000);
 
-
 const input = document.getElementById('input'); 
+
 function submitInput() {
-  //The code check if the input is empty
+  // The code checks if the input is empty
   if (input.value.trim() === '') {
     alert('Please enter a correct state');
     return false;
   } else {
-      //The code print out the weather result
+    // The code stores the input and redirects to another page
     localStorage.setItem('input', input.value);
     window.location.href = '../index2.html';
   }
-
 }
+
   //Code to extract data from API
 const apikey = "8f12c103c592e4216ded1bcc4da97cb1"
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q="
